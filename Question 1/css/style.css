@@ -1,0 +1,121 @@
+/** 
+Author: Rukundo Kevin
+Website: www.rukundokevin.codes
+*/
+
+* {
+	padding: 0;
+	margin: 0;
+}
+body {
+	font-family: "Nunito", sans-serif;
+	font-family: "Outfit", sans-serif;
+}
+h1 {
+	font-size: 50px;
+}
+h2 {
+	font-size: 28px;
+}
+p {
+	font-size: 18px;
+	padding-top: 10px;
+}
+#wrapper {
+	position: relative;
+}
+.curves {
+	position: absolute;
+	bottom: -200px;
+	z-index: -1;
+}
+.logo {
+	padding-bottom: 20px;
+	width: 80px;
+	position: relative;
+	top: 0px;
+	left: -1px;
+}
+
+.content {
+	background-color: white;
+	background-repeat: no-repeat;
+	background-size: cover;
+	width: 85%;
+	margin: 0 auto;
+	margin-top: 70px;
+	box-shadow: 10px 10px 20px 10px grey;
+	position: relative;
+}
+.form-curves {
+	position: absolute;
+	top: -66px;
+	right: -1px;
+}
+.inner-container {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+	justify-content: center;
+	justify-content: space-around;
+	align-items: center;
+}
+.row {
+	display: flex;
+	justify-content: space-between;
+	gap: 50px;
+	padding-bottom: 20px;
+}
+
+input[type="text"] {
+	width: 100%;
+	padding: 12px 20px;
+	box-sizing: border-box;
+	border: none;
+	border-bottom: 2px solid black;
+	transition: .3s ease-in-out;
+}
+
+input:focus,textarea:focus{
+	border-bottom: 2px solid coral;
+}
+textarea {
+	width: 100%;
+	padding: 12px 20px;
+	margin: 8px 0;
+	box-sizing: border-box;
+	border: none;
+	border-bottom: 2px solid black;
+}
+.btn {
+	background-color: coral;
+	border: none;
+	color: white;
+	padding: 10px 15px;
+	text-align: center;
+	font-size: 14px;
+	transition: .8s ease-out;
+}
+.btn:hover{
+	background-color: rgb(222, 73, 19);
+}
+.no-outline:focus {
+	outline: none;
+}
+
+.right-container {
+	border-left: 1px solid black;
+	margin: 40px;
+	padding: 40px;
+}
+.download {
+	display: flex;
+	align-items: center;
+	padding-top: 20px;
+}
+.cursor {
+	cursor: pointer;
+}
+a{
+  text-decoration: none;
+  color: black;
+}
