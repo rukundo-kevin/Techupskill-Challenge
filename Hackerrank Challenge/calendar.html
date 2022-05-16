@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en" data-framework="javascript">
+    <head>
+        <meta charset="utf-8">
+        <title>Calendar App</title>
+        <link rel="stylesheet" href="css/calendar.css">
+    </head>
+    <body>
+        <div>
+            <label> Appointment Date </label>
+            <input type="date" id ='appDate' required> 
+            <label> Appointment Reason </label>
+            <input type="text" id ='appReason' required> 
+            <button id="makeAppointment" > Make Appointment</button>
+            <div id="debug">
+            </div>
+        </div>
+        <div>
+            <h3>List of Appointments</h3>
+            <table border = "1">
+        <thead>
+                <tr>
+                <th>
+                    Date
+                </th>
+                <th>Description</th>
+             </tr>
+            </thead>
+             <tbody>
+                 
+             </tbody>
+    </table>  
+        </div>
+        <script src="js/calendar.js"></script>
+    </body>
+</html>
