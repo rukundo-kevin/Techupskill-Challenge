@@ -20,36 +20,3 @@ function inventoryList(){
 
     };
 }
-
-    
-// a calendar app to make appointments 
-// https://www.hackerrank.com/challenges/calendar-app-two/problem
-
-function calendarApp(calendar){
-    let appointments = {};
-    let add = function(date, name){
-        if(!appointments[date]){
-            appointments[date] = [];
-        }
-        appointments[date].push(name);
-    };
-    let remove = function(date, name){
-        if(appointments[date]){
-            let index = appointments[date].indexOf(name);
-            if(index > -1){
-                appointments[date].splice(index, 1);
-            }
-        }
-    };
-    let getAppointments = function(date){
-        if(appointments[date]){
-            return appointments[date].join(', ');
-        }
-        return 'No appointments';
-    };
-    for(let item of calendar){
-        let [date, name] = item.split(' ');
-        add(date, name);
-    }
-    return {add, remove, getAppointments};
-}
